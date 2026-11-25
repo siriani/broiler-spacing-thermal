@@ -4,6 +4,8 @@ Code and data for the article *"Camera-Measured Spacing of Broiler Chickens Unde
 
 **Repository authors:** Igor Cristian Hübner and Allan Lincoln Rodrigues Siriani.
 
+**Archived version:** [doi:10.5281/zenodo.24518994](https://doi.org/10.5281/zenodo.24518994)
+
 ## What is here
 
 | Path | Content |
