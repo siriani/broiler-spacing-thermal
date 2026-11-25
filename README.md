@@ -1,6 +1,6 @@
 # Body-length-scaled nearest-neighbour distance of broilers under cold, thermoneutral and heat treatments: code and data
 
-Code and data for the article *"Body-Length-Scaled Nearest-Neighbour Distance as a Candidate Camera-Based Measure of Spacing Responses to Acute Cooler and Warmer Conditions in Broilers: A Randomised Exploratory Study"* (submitted to *Animals*, MDPI).
+Code and data for the article *"Body-Length-Scaled Nearest-Neighbour Distance of Broilers from Overhead Video: Measurement Properties and Pilot Evidence from a Randomised Experiment with Cooler and Warmer Conditions"* (submitted to *Animals*, MDPI).
 
 **Repository authors:** Igor Cristian Hübner and Allan Lincoln Rodrigues Siriani.
 
