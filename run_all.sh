@@ -16,4 +16,5 @@ python analise/zonas_teste.py             # tests of the drinker and feeder zone
 python analise/texto_s2.py                # within-compartment relation with logged temperature (Text S2)
 python figuras/fig_setup.py               # Figure 1
 python figuras/fig_recursos.py            # Figure 3
-cp analise/zonas_box_data.csv suplemento/Table_S6_resources.csv
+python analise/checagens_r11.py         # per-batch differences, joint interval, random-placement NND, corrected NND_BL, 8–12 detections
+python analise/exporta_suplemento.py     # Tables S2, S3 and S6 in English, as published

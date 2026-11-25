@@ -46,7 +46,7 @@ for q in [[(RA,0,0),(RA,0,RZ),(RA,RB,RZ),(RA,RB,0)],[(0,RB,0),(0,RB,RZ),(RA,RB,R
 ax.plot(*zip(*[P(RA,OB+35,0),P(RA,OB+35,195),P(RA,OB+105,195),P(RA,OB+105,0)]),c="#444",lw=.9,zorder=30)
 ax.add_patch(Polygon([P(RA/2-5,RB/2-5,214),P(RA/2+5,RB/2-5,214),P(RA/2+5,RB/2+5,214),P(RA/2-5,RB/2+5,214)],fc="#2d3748",zorder=31))
 ax.plot(*zip(P(RA/2,RB/2,212),P(RA/2,RB/2,0)),c="#2d3748",lw=.5,ls=(0,(1,3)),zorder=29)
-lab(ax,RA/2,RB/2,214,"camera, 2.12 m",-45,22)
+lab(ax,RA/2,RB/2,214,"camera, 2.12 m above floor",-45,22)
 lab(ax,0,bc,182,"split A/C",40,22); lab(ax,7,OB+120,150,"fan heater on shelf",50,14); lab(ax,5,22,60,"dehumidifiers*",40,40,AS); lab(ax,2,OB+122,21,"logger, 0.20 m*",48,-12,AS)
 lab(ax,0,bc,80,"exhaust fan, 0.80 m",52,-22); lab(ax,RA,OB+70,120,"door (front wall)",-38,-6)
 lab(ax,fe[0],fe[1],40,"tube feeder",-10,-48); lab(ax,dr[0],dr[1],20,"bell drinker",-40,-26)
