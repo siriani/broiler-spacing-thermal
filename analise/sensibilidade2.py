@@ -27,29 +27,6 @@ for (a,l) in Wd.index:
 rc=[Wd.loc[k,'frio']/Wd.loc[k,'termoneutro'] for k in Wd.index]; dc=[Tj.loc[k,'frio']-Tj.loc[k,'termoneutro'] for k in Wd.index]
 rh=[Wd.loc[k,'calor']/Wd.loc[k,'termoneutro'] for k in Wd.index]; dh=[Tj.loc[k,'calor']-Tj.loc[k,'termoneutro'] for k in Wd.index]
 P(f"Spearman razão × ΔT: frio {pd.Series(rc).corr(pd.Series(dc),method='spearman'):+.2f}; calor {pd.Series(rh).corr(pd.Series(dh),method='spearman'):+.2f} (7 pontos)")
-# intervalo por inversão (deslocamento aditivo no compartimento frio, alocações de lote inteiras)
-P("\n== Conjunto de confiança por inversão do teste de aleatorização (diferença média, bilateral, 216 alocações)")
-boxes=B.groupby(["lote","box"]).trat.first()
-def ci(target,alpha):
-    acc=[]
-    for delta in np.arange(-0.20,0.20001,0.001):
-        X=B.copy(); X.loc[X.trat==target,"nnd_bl"]-=delta
-        def stat(assign):
-            Y=X.copy(); Y["t2"]=[assign[(l,b)] for l,b in zip(Y.lote,Y.box)]
-            V=Y.pivot_table(index="data",columns="t2",values="nnd_bl"); return (V[target]-V["termoneutro"]).mean()
-        obs=stat(boxes.to_dict()); vals=[]
-        lotes=sorted(B.lote.unique())
-        for perms in itertools.product(list(itertools.permutations(T3)),repeat=3):
-            a={}
-            for l,p in zip(lotes,perms):
-                bx=sorted(boxes[l].index)
-                for b,t in zip(bx,p): a[(l,b)]=t
-            vals.append(stat(a))
-        vals=np.array(vals); p=(np.abs(vals)>=abs(obs)-1e-12).mean()
-        if p>alpha: acc.append(delta)
-    return (min(acc),max(acc)) if acc else (np.nan,np.nan)
-for t in ["frio","calor"]:
-    lo,hi=ci(t,0.10); P(f"{t}−TN: 90% {lo:+.3f} a {hi:+.3f} BL")
 # estabilidade par/ímpar
 P("\n== Estabilidade da mediana por compartimento-data: quadros pares × ímpares")
 F=pd.read_csv("analise/quadros_10aves.csv")

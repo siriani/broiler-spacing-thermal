@@ -1,6 +1,6 @@
 """Rodada 11 (revisão Fable): (a) conjunto de confiança conjunto (δc, δh) por inversão do teste de aleatorização, projetado;
-(b) diferenças médias ponderadas por lote; (c) NND sob posicionamento aleatório (Monte Carlo, com exclusão de 1 comprimento corporal
-e sem exclusão); (d) NND_BL com posições e escala corrigidas de distorção (CAM1/CAM3); (e) NND_BL com todos os quadros de 8–12 detecções.
+(b) diferenças médias ponderadas por lote; (c) NND sob posicionamento aleatório (Monte Carlo 2000 por câmera, com distância mínima de 0,6 comprimento corporal
+e sem exclusão; ignora paredes, comedouro e bebedouros); (d) NND_BL com posições e escala corrigidas de distorção (CAM1/CAM3); (e) NND_BL com todos os quadros de 8–12 detecções.
 Saída: analise/checagens_r11.txt"""
 import glob,itertools,numpy as np,pandas as pd
 from scipy.spatial import cKDTree
@@ -55,9 +55,10 @@ F=pd.DataFrame(rows)
 def batch_test(V,col):
     M=V.groupby(["lote","data","trat"])[col].median().reset_index().pivot_table(index=["lote","data"],columns="trat",values=col)
     Lm=M.groupby("lote").mean(); c=(Lm.idxmin(axis=1)=="frio").sum(); h=(Lm.idxmax(axis=1)=="calor").sum()
+    batch_test.Lm=Lm
     return c,h,(M.frio/M.termoneutro).mean(),(M.calor/M.termoneutro).mean()
 for lab,V,col in [("(d) NND_BL corrigida de distorção (n=10)",F[F.n==10],"nnd_bl_corr"),("    NND_BL original (n=10)",F[F.n==10],"nnd_bl"),("(e) NND_BL com quadros de 8–12 detecções",F,"nnd_bl")]:
-    c,h,rc,rh=batch_test(V,col); P(f"{lab}: frio menor {c}/3, calor maior {h}/3; frio/TN {rc:.3f}, calor/TN {rh:.3f}")
+    c,h,rc,rh=batch_test(V,col); P(f"{lab}: frio menor {c}/3, calor maior {h}/3; frio/TN {rc:.3f}, calor/TN {rh:.3f}"); P("      médias por lote:",batch_test.Lm[T3].round(3).to_dict('index'))
 # (c) random NND reference, arena per camera from calibration
 P("(c) NND (cm) sob posicionamento aleatório de 10 aves (Monte Carlo 2000):")
 T10=F[F.n==10]
