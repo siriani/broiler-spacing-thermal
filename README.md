@@ -1,6 +1,6 @@
-# Camera-measured spacing of broilers under cold, thermoneutral and heat treatments: code and data
+# Body-length-scaled nearest-neighbour distance of broilers under cold, thermoneutral and heat treatments: code and data
 
-Code and data for the article *"Camera-Measured Spacing of Broiler Chickens Under Cold, Thermoneutral and Heat Treatments"* (submitted to *Animals*, MDPI).
+Code and data for the article *"Body-Length-Scaled Nearest-Neighbour Distance as a Candidate Camera-Based Measure of Spacing Responses to Cold and Heat in Broilers: A Randomised Exploratory Study"* (submitted to *Animals*, MDPI).
 
 **Repository authors:** Igor Cristian Hübner and Allan Lincoln Rodrigues Siriani.
 
