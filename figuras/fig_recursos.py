@@ -32,11 +32,12 @@ for k,(col,off,lab,fc) in enumerate([("beb",-w/2,"Drinker zone","#4299e1"),("com
     m=Z.groupby("trat")[col].mean().loc[T3]; ax.bar(x+off,m.values,w*0.92,color=fc,alpha=.85,label=lab,zorder=1)
     Lb=Z.groupby(["lote","trat"])[col].mean().unstack()[T3]
     for l,row in Lb.iterrows(): ax.scatter(x+off,row.values,marker=MK[l],s=24,c="#1a202c",zorder=3,edgecolors="white",linewidths=.4)
-    ax.hlines(Z[col+"_esp"].mean(),x[0]+off-w/2,x[-1]+off+w/2,colors="0.35",linestyles=":",lw=1,zorder=2)
+    Le=Z.groupby(["lote","trat"])[col+"_esp"].mean().unstack()[T3]
+    for l,row in Le.iterrows(): ax.scatter(x+off+w*0.32,row.values,marker=MK[l],s=20,facecolors="none",edgecolors="0.45",linewidths=.9,zorder=3)
     for i,v in enumerate(m.values): ax.text(x[i]+off,1.5,f"{v:.0f}%",ha="center",fontsize=7,color="#1a202c",fontweight="bold")
 ax.set_xticks(x,[LAB[t] for t in T3]); ax.set_ylabel("Birds within 30 cm (%)"); ax.set_ylim(0,58)
 for l,mk in MK.items(): ax.scatter([],[],marker=mk,c="#1a202c",s=18,label=f"batch {l.replace('rep','L')}")
-ax.plot([],[],":",c="0.35",label="random placement"); ax.legend(frameon=False,fontsize=6.5,ncol=3,loc="upper left")
+ax.scatter([],[],marker="o",facecolors="none",edgecolors="0.45",s=18,label="random placement (per batch)"); ax.legend(frameon=False,fontsize=6.5,ncol=3,loc="upper left")
 ax.set_title("(d) Birds in the drinker and feeder zones (bars: mean of compartment-dates; symbols: batch means)",loc="left",fontsize=7.5,fontweight="bold")
 for sp in ["top","right"]: ax.spines[sp].set_visible(False)
 fig.savefig("figuras/fig_recursos.png",dpi=300,bbox_inches="tight"); fig.savefig("figuras/fig_recursos.pdf",bbox_inches="tight"); print("ok")

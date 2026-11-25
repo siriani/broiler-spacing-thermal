@@ -17,6 +17,7 @@ Code and data for the article *"Body-Length-Scaled Nearest-Neighbour Distance as
 | `dados/Table_S4_weekly_weights.csv`, `pesagens_peso_medio_por_ave.csv` | Weekly group weights (mean per bird) |
 | `dados/quadros_figura3/` | The three video frames shown in Figure 3 and how they were selected |
 | `analise/`, `figuras/` | Analysis and figure scripts |
+| `model_v1_yolo26m_seg.pt` (Zenodo only) | Weights of the YOLO26m instance-segmentation model v1 used to produce the per-bird detections (Ultralytics 8.4.51; image size 1024; confidence 0.25) |
 
 **Videos.** Eight of the recordings, with manual annotations and tracking outputs, are openly available in the dataset of the companion study: Hübner, Siriani and Moura, *Overhead videos, manual annotations and per-instance tracking outputs of small broiler groups*, Zenodo, [doi:10.5281/zenodo.23960761](https://doi.org/10.5281/zenodo.23960761). The remaining recordings are available from the authors on reasonable request because of their size. All analyses in this repository start from the per-bird detections in `dados/medicao_v0/`, so the videos are not needed to reproduce the results.
 
