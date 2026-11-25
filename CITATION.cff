@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code or data, please cite it as below."
-title: "Code and data for: Body-Length-Scaled Nearest-Neighbour Distance of Broilers from Overhead Video: Measurement Properties and Pilot Evidence from a Randomised Experiment with Cooler and Warmer Conditions"
+title: "Code and data for: Body-Length-Scaled Nearest-Neighbour Distance as a Candidate Camera-Based Measure of Spacing Responses to Cold and Heat in Broilers: A Randomised Exploratory Study"
 authors:
   - family-names: "Hübner"
     given-names: "Igor Cristian"
@@ -8,5 +8,5 @@ authors:
     given-names: "Allan Lincoln Rodrigues"
 doi: "10.5281/zenodo.24518994"
 license: MIT
-version: "1.6.0"
+version: "1.7.0"
 date-released: "2026-11-24"
