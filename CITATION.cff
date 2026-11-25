@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "Broiler spacing under thermal treatments: code and data"
+authors:
+  - family-names: "Hübner"
+    given-names: "Igor Cristian"
+  - family-names: "Siriani"
+    given-names: "Allan Lincoln Rodrigues"
+license: MIT
+version: "1.0.0"
+date-released: "2026-11-24"

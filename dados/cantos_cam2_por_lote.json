@@ -1,0 +1,76 @@
+{
+ "nota": "Cantos da cama na CAM2 por lote (px, imagem 960x1080; ordem TL, TR, BR, BL; mapeados para 156 x 130 cm). A CAM2 foi reenquadrada entre os lotes: a calibracao_v1 (lote 3) nao serve para L1 e L2. Marcados em 2026-11-21 sobre a mediana de 5 quadros (L1: 16/03; L2: 09/04), com grade de 50 px; precisao estimada +-5 px. CONFERIR.",
+ "rep1": [
+  [
+   315,
+   198
+  ],
+  [
+   722,
+   205
+  ],
+  [
+   712,
+   925
+  ],
+  [
+   312,
+   898
+  ]
+ ],
+ "rep2": [
+  [
+   340,
+   250
+  ],
+  [
+   740,
+   248
+  ],
+  [
+   745,
+   965
+  ],
+  [
+   342,
+   945
+  ]
+ ],
+ "rep3": [
+  [
+   293,
+   112
+  ],
+  [
+   700,
+   147
+  ],
+  [
+   690,
+   850
+  ],
+  [
+   288,
+   812
+  ]
+ ],
+ "rep3_2026-06-18": [
+  [
+   302,
+   212
+  ],
+  [
+   698,
+   215
+  ],
+  [
+   700,
+   935
+  ],
+  [
+   302,
+   910
+  ]
+ ],
+ "nota_2": "2026-11-24: a CAM2 também foi reenquadrada DENTRO do L3, entre 21/05 e 18/06; 'rep3' vale para 21/05; 'rep3_2026-06-18' marcado sobre a mediana de 15 quadros de 18/06 (grade 50 px, ±5–10 px). CONFERIR. Ainda não aplicado em dados/medicao_v1 (corrige_cam2.py usa só a chave do lote)."
+}

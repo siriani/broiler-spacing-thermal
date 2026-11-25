@@ -1,0 +1,64 @@
+﻿lote;data;idade_dias;compartimento;tratamento;numero_de_aves;peso_total_kg;peso_medio_por_ave_kg;observacao
+Lote 1;2026-02-04;0;1;TT;10;0.4;0.04;
+Lote 1;2026-02-04;0;2;TEC;10;0.42;0.041999999999999996;
+Lote 1;2026-02-04;0;3;TEF;10;0.4;0.04;
+Lote 1;2026-02-13;9;1;TT;10;2.92;0.292;
+Lote 1;2026-02-13;9;2;TEC;10;2.9;0.29;
+Lote 1;2026-02-13;9;3;TEF;10;3.0;0.3;
+Lote 1;2026-02-20;16;1;TT;10;7.38;0.738;
+Lote 1;2026-02-20;16;2;TEC;10;7.24;0.724;
+Lote 1;2026-02-20;16;3;TEF;10;7.4;0.74;
+Lote 1;2026-02-25;21;1;TT;10;11.8;1.1800000000000002;
+Lote 1;2026-02-25;21;2;TEC;10;11.3;1.1300000000000001;
+Lote 1;2026-02-25;21;3;TEF;10;11.68;1.168;
+Lote 1;2026-03-04;28;1;TT;10;19.76;1.9760000000000002;
+Lote 1;2026-03-04;28;2;TEC;10;18.84;1.884;
+Lote 1;2026-03-04;28;3;TEF;10;19.8;1.98;
+Lote 1;2026-03-11;35;1;TT;10;28.08;2.808;
+Lote 1;2026-03-11;35;2;TEC;10;27.86;2.786;
+Lote 1;2026-03-11;35;3;TEF;10;27.9;2.79;
+Lote 1;2026-03-18;42;1;TT;10;35.26;3.526;
+Lote 1;2026-03-18;42;2;TEC;10;35.42;3.5420000000000003;
+Lote 1;2026-03-18;42;3;TEF;10;35.88;3.588;
+Lote 2;2026-03-25;0;1;TT;10;0.46;0.046;
+Lote 2;2026-03-25;0;2;TEF;10;0.46;0.046;
+Lote 2;2026-03-25;0;3;TEC;10;0.46;0.046;
+Lote 2;2026-04-01;7;1;TT;10;2.1;0.21000000000000002;
+Lote 2;2026-04-01;7;2;TEF;10;2.14;0.21400000000000002;
+Lote 2;2026-04-01;7;3;TEC;10;2.18;0.21800000000000003;
+Lote 2;2026-04-08;14;1;TT;10;5.68;0.568;
+Lote 2;2026-04-08;14;2;TEF;10;5.62;0.562;
+Lote 2;2026-04-08;14;3;TEC;10;6.1;0.61;
+Lote 2;2026-04-15;21;1;TT;10;11.32;1.1320000000000001;
+Lote 2;2026-04-15;21;2;TEF;10;11.84;1.184;
+Lote 2;2026-04-15;21;3;TEC;10;12.36;1.236;
+Lote 2;2026-04-22;28;1;TT;10;18.88;1.888;
+Lote 2;2026-04-22;28;2;TEF;10;19.26;1.9260000000000002;
+Lote 2;2026-04-22;28;3;TEC;10;19.7;1.97;
+Lote 2;2026-04-29;35;1;TT;10;26.94;2.694;
+Lote 2;2026-04-29;35;2;TEF;10;26.6;2.66;
+Lote 2;2026-04-29;35;3;TEC;10;27.36;2.7359999999999998;
+Lote 2;2026-05-06;42;1;TT;10;34.52;3.4520000000000004;
+Lote 2;2026-05-06;42;2;TEF;10;30.48;3.048;
+Lote 2;2026-05-06;42;3;TEC;10;30.72;3.072;
+Lote 3;2026-05-13;0;1;TEC;10;0.46;0.046;
+Lote 3;2026-05-13;0;2;TT;10;0.46;0.046;
+Lote 3;2026-05-13;0;3;TEF;10;0.46;0.046;
+Lote 3;2026-05-20;7;1;TEC;10;2.16;0.21600000000000003;
+Lote 3;2026-05-20;7;2;TT;10;2.24;0.22400000000000003;
+Lote 3;2026-05-20;7;3;TEF;10;2.36;0.236;
+Lote 3;2026-05-27;14;1;TEC;10;5.88;0.588;
+Lote 3;2026-05-27;14;2;TT;10;5.9;0.5900000000000001;
+Lote 3;2026-05-27;14;3;TEF;10;6.24;0.624;
+Lote 3;2026-06-03;21;1;TEC;10;12.06;1.206;
+Lote 3;2026-06-03;21;2;TT;10;12.1;1.21;
+Lote 3;2026-06-03;21;3;TEF;10;12.94;1.294;
+Lote 3;2026-06-10;28;1;TEC;10;19.82;1.982;
+Lote 3;2026-06-10;28;2;TT;10;20.2;2.02;
+Lote 3;2026-06-10;28;3;TEF;10;21.76;2.176;
+Lote 3;2026-06-17;35;1;TEC;10;;;Sem pesagem: a temperatura de referência já estava no mínimo do manual Ross, e a pesagem foi suspensa para não aumentar o estresse das aves.
+Lote 3;2026-06-17;35;2;TT;10;;;Sem pesagem: a temperatura de referência já estava no mínimo do manual Ross, e a pesagem foi suspensa para não aumentar o estresse das aves.
+Lote 3;2026-06-17;35;3;TEF;10;;;Sem pesagem: a temperatura de referência já estava no mínimo do manual Ross, e a pesagem foi suspensa para não aumentar o estresse das aves.
+Lote 3;2026-06-24;42;1;TEC;10;;;Sem pesagem: a temperatura de referência já estava no mínimo do manual Ross, e a pesagem foi suspensa para não aumentar o estresse das aves.
+Lote 3;2026-06-24;42;2;TT;10;;;Sem pesagem: a temperatura de referência já estava no mínimo do manual Ross, e a pesagem foi suspensa para não aumentar o estresse das aves.
+Lote 3;2026-06-24;42;3;TEF;10;;;Sem pesagem: a temperatura de referência já estava no mínimo do manual Ross, e a pesagem foi suspensa para não aumentar o estresse das aves.

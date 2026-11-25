@@ -1,0 +1,10 @@
+dados/medicao_v1/
+analise/*.csv
+analise/*.txt
+figuras/*.png
+figuras/*.pdf
+suplemento/
+video/
+run.log
+__pycache__/
+.DS_Store

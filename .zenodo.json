@@ -1,0 +1,11 @@
+{
+  "title": "Broiler spacing under thermal treatments: code and data",
+  "upload_type": "software",
+  "creators": [
+    {"name": "Hübner, Igor Cristian", "affiliation": "School of Agricultural Engineering (FEAGRI), University of Campinas"},
+    {"name": "Siriani, Allan Lincoln Rodrigues"}
+  ],
+  "license": "MIT",
+  "keywords": ["broiler", "thermal stress", "nearest-neighbour distance", "computer vision", "precision livestock farming"],
+  "description": "Code, per-bird detections, camera calibration, data-logger records and weekly weights for the article on camera-measured spacing of broilers under cold, thermoneutral and heat treatments."
+}
